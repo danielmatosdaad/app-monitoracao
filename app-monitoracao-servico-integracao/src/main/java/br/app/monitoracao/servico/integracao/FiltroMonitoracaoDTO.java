@@ -4,6 +4,11 @@ import br.app.barramento.integracao.dto.DTO;
 
 public class FiltroMonitoracaoDTO implements DTO{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public Long getId() {
 		// TODO Auto-generated method stub

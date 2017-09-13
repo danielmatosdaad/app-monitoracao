@@ -3,7 +3,7 @@ package br.app.monitoracao.api;
 import br.app.smart.api.infra.AbstractLocalizadorServico;
 import br.app.smart.api.infra.TipoLocalizador;
 
-public class LocalizarServicoMonitoracao<IService> extends AbstractLocalizadorServico<IService> {
+public class LocalizarServicoMonitoracao<IServicoMonitoracao> extends AbstractLocalizadorServico<IServicoMonitoracao> {
 
 	private static final String LOCALIZACAO_SERVICO = "localizacao_servico.properties";
 	private static final String REGISTRO_NOME_LOCAL = "remoto.monitoracao";

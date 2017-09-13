@@ -20,7 +20,6 @@ import br.app.monitoracao.servico.integracao.IServicoMonitoracaoLocal;
 import br.app.monitoracao.servico.integracao.IServicoMonitoracaoRemote;
 import br.app.monitoracao.servico.integracao.MonitoracaoDTO;
 
-@Asynchronous
 @Stateless
 @Remote(value = { IServicoMonitoracaoRemote.class, IServicoRemoteDAO.class })
 @Local(value = { IServicoMonitoracaoLocal.class, IServicoLocalDAO.class })
@@ -129,6 +128,13 @@ public class MonitoracaoServicoImp implements IServicoMonitoracaoRemote, IServic
 	public List<MonitoracaoDTO> buscarTransacoes(FiltroMonitoracaoDTO filtro)
 			throws InfraEstruturaException, NegocioException {
 		return null;
+	}
+
+	@Asynchronous
+	@Override
+	public void registrarMonitoracao(MonitoracaoDTO dto) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
