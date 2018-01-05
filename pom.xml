@@ -35,6 +35,7 @@
         <module>app-monitoracao-servico-ear</module>
         <module>app-monitoracao-servico-api</module>
         <module>app-monitoracao-servico-integracao</module>
+        <module>app-monitoracao-servico-web</module>
   </modules>
 
     <properties>
